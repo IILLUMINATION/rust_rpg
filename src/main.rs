@@ -57,4 +57,11 @@ fn main() {
         "Вы встретили монстра, его величают {}, атака у него {}, а жизней {}...",
         monster.name, monster.damage, monster.hp
     );
+    println!("Вы подняли руку в неумолимом ударе по {}", monster.name);
+    monster.hp = monster.hp - player.damage;
+    if monster.hp <= 0 {
+        println!("{} не повезло... Оружие размозжило ему череп", monster.name);
+    } else {
+        println!("{} выжил! И он готов дать отпор...", monster.name);
+    }
 }
