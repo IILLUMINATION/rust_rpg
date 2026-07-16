@@ -118,6 +118,7 @@ fn main() {
                             "{} повежен, вы герой, вы его сломали, молодец, вы король",
                             monster.name,
                         );
+                        break;
                     }
                     is_my_turn = false;
                 }
@@ -141,7 +142,7 @@ fn main() {
             println!("--------------------");
             println!("Ход {}", monster.name);
             is_my_turn = true;
-            let crit = hit_logic(player.luck);
+            let crit = hit_logic(monster.luck);
             if crit == 2 {
                 println!("{} везёт и он выбивает критический удар", monster.name);
             }
