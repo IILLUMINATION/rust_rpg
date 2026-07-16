@@ -3,4 +3,5 @@ pub struct Monster {
     pub hp: i32,
     pub damage: i32,
     pub rarity: String,
+    pub luck: i32,
 }
