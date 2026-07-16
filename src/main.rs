@@ -4,6 +4,13 @@ struct Player {
     damage: i32,
 }
 
+struct Monster {
+    name: String,
+    hp: i32,
+    damage: i32,
+    rarity: String,
+}
+
 //i32 это 32 битное целое число
 
 fn main() {
@@ -38,5 +45,16 @@ fn main() {
     println!(
         "Создали героя: {}, его здоровье: {}, а атака: {}",
         player.name, player.hp, player.damage
+    );
+
+    let mut monster = Monster {
+        name: "Олег Швабров".to_string(),
+        hp: 10,
+        damage: 20,
+        rarity: "ordinary".to_string(),
+    };
+    println!(
+        "Вы встретили монстра, его величают {}, атака у него {}, а жизней {}...",
+        monster.name, monster.damage, monster.hp
     );
 }
