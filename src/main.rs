@@ -37,6 +37,6 @@ fn main() {
     //делаем мутабельной чтобы потом менять хп допустим или баффы давать ему
     println!(
         "Создали героя: {}, его здоровье: {}, а атака: {}",
-        name, player.hp, player.damage
+        player.name, player.hp, player.damage
     );
 }
