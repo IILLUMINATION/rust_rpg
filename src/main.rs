@@ -1,17 +1,8 @@
-struct Player {
-    name: String,
-    hp: i32,
-    damage: i32,
-}
+mod monster;
+mod player;
 
-struct Monster {
-    name: String,
-    hp: i32,
-    damage: i32,
-    rarity: String,
-}
-
-//i32 это 32 битное целое число
+use monster::Monster;
+use player::Player;
 
 fn main() {
     println!("Как зовут твоего героя?");
@@ -65,3 +56,5 @@ fn main() {
         println!("{} выжил! И он готов дать отпор...", monster.name);
     }
 }
+
+//i32 это 32 битное целое число
